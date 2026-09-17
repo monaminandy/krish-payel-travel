@@ -1,0 +1,2309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Plan My Trip | Krish & Payel</title>
+
+
+    <!-- GOOGLE FONTS -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     NAVBAR
+========================= -->
+    <nav class="nav">
+      <a class="brand" href="index.html" aria-label="Krish and Payel home">
+        <img src="assets/logo1.png" alt="Krish and Payel">
+        <span>KRISH <em>&</em> PAYEL</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <i class="ri-menu-3-line"></i>
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="customised.html" class="nav-cta">Plan My Trip <i class="ri-arrow-right-line"></i></a></li>
+      </ul>
+    </nav>
+
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero">
+
+
+    <div class="hero-content">
+
+
+        <div class="small-title">
+
+            <span class="small-line"></span>
+
+            YOUR JOURNEY, YOUR WAY
+
+        </div>
+
+
+        <h1>
+
+            Plan Your <br>
+
+            <span>Dream Trip.</span>
+
+        </h1>
+
+
+        <p>
+
+            Every traveller is different.
+
+            Tell us your preferences and let us design
+            a journey made exclusively for you.
+
+        </p>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =========================
+     FORM
+========================= -->
+
+<form id="tripForm">
+
+
+    <main class="main-container">
+
+
+        <div class="intro">
+
+            <h2>Your Journey Begins Here</h2>
+
+            <p>
+
+                Share your travel preferences with us.
+                Our travel experts will carefully create
+                an experience tailored specifically for you.
+
+            </p>
+
+        </div>
+
+
+
+        <!-- =====================
+             DESTINATION
+        ====================== -->
+
+        <section class="form-section">
+
+
+            <div class="section-number">
+
+                01 / DESTINATION
+
+            </div>
+
+
+            <h2>Where would you like to go?</h2>
+
+
+            <p class="section-text">
+
+                Choose the destination that inspires you.
+
+            </p>
+
+
+
+            <div class="carousel-wrapper">
+
+
+                <button type="button"
+                class="carousel-btn"
+                onclick="scrollCarousel(-350)">
+
+                    ←
+
+                </button>
+
+
+
+                <div class="carousel"
+                id="destinationCarousel">
+
+
+                    <div class="destination-card silk"
+                    data-destination="Silk Route">
+
+                        <div class="destination-name">
+                            Silk Route
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="destination-card kalimpong"
+                    data-destination="Offbeat Kalimpong">
+
+                        <div class="destination-name">
+                            Offbeat Kalimpong
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="destination-card darjeeling"
+                    data-destination="Offbeat Darjeeling">
+
+                        <div class="destination-name">
+                            Offbeat Darjeeling
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="destination-card kashmir"
+                    data-destination="Kashmir">
+
+                        <div class="destination-name">
+                            Kashmir
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="destination-card andaman"
+                    data-destination="Andaman">
+
+                        <div class="destination-name">
+                            Andaman
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="destination-card thailand"
+                    data-destination="Thailand">
+
+                        <div class="destination-name">
+                            Thailand
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="destination-card rajasthan"
+                    data-destination="Rajasthan">
+
+                        <div class="destination-name">
+                            Rajasthan
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="destination-card puri"
+                    data-destination="Puri">
+
+                        <div class="destination-name">
+                            Puri
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="destination-card shimla"
+                    data-destination="Shimla Manali">
+
+                        <div class="destination-name">
+                            Shimla Manali
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="destination-card shillong"
+                    data-destination="Guwahati Shillong">
+
+                        <div class="destination-name">
+                            Guwahati Shillong
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="destination-card arunachal"
+                    data-destination="Arunachal">
+
+                        <div class="destination-name">
+                            Arunachal
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="destination-card vizag"
+                    data-destination="Vizag Araku">
+
+                        <div class="destination-name">
+                            Vizag Araku
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="destination-card dooars"
+                    data-destination="Dooars">
+
+                        <div class="destination-name">
+                            Dooars
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="destination-card kerala"
+                    data-destination="Kerala">
+
+                        <div class="destination-name">
+                            Kerala
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <button type="button"
+                class="carousel-btn"
+                onclick="scrollCarousel(350)">
+
+                    →
+
+                </button>
+
+
+            </div>
+
+
+            <input type="hidden"
+            id="destination"
+            required>
+
+
+        </section>
+
+
+
+        <!-- =====================
+             TRAVELLERS
+        ====================== -->
+
+        <section class="form-section">
+
+
+            <div class="section-number">
+
+                02 / TRAVELLERS
+
+            </div>
+
+
+            <h2>Who are you travelling with?</h2>
+
+
+            <div class="grid-3">
+
+
+                <div class="question">
+
+                    <label class="question-title">
+
+                        Number of Travellers
+
+                    </label>
+
+
+                    <input
+                    type="number"
+                    name="persons"
+                    min="1"
+                    placeholder="Example: 4"
+                    required>
+
+                </div>
+
+<div class="question">
+
+    <label class="question-title">
+        Anyone above 60?
+    </label>
+
+
+    <div class="option-group">
+
+        <input type="radio"
+               id="seniorYes"
+               name="senior"
+               value="Yes">
+
+        <label for="seniorYes">
+            Yes
+        </label>
+
+
+        <input type="radio"
+               id="seniorNo"
+               name="senior"
+               value="No"
+               checked>
+
+        <label for="seniorNo">
+            No
+        </label>
+
+    </div>
+
+
+    <!-- NUMBER OF SENIOR CITIZENS -->
+
+    <div class="conditional" id="seniorDetails">
+
+        <label class="question-title">
+            Number of Senior Citizens
+        </label>
+
+        <input
+            type="number"
+            name="seniorCount"
+            min="1"
+            placeholder="Number of senior citizens">
+
+    </div>
+
+</div>
+
+
+
+                <div class="question">
+
+                    <label class="question-title">
+
+                        Are there any children?
+
+                    </label>
+
+
+                    <div class="option-group">
+
+
+                        <input type="radio"
+                        id="kidsYes"
+                        name="kids"
+                        value="Yes">
+
+
+                        <label for="kidsYes">
+
+                            Yes
+
+                        </label>
+
+
+
+                        <input type="radio"
+                        id="kidsNo"
+                        name="kids"
+                        value="No"
+                        checked>
+
+
+                        <label for="kidsNo">
+
+                            No
+
+                        </label>
+
+
+                    </div>
+
+
+                    <div class="conditional"
+                    id="kidsDetails">
+
+
+                        <label class="question-title">
+
+                            Number of Children
+
+                        </label>
+
+
+                        <input
+                        type="number"
+                        name="childrenCount"
+                        min="1"
+                        placeholder="Number of children">
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =====================
+             MEALS
+        ====================== -->
+
+        <section class="form-section">
+
+
+            <div class="section-number">
+
+                03 / MEALS
+
+            </div>
+
+
+            <h2>Your dining preferences</h2>
+
+
+            <div class="question">
+
+
+                <label class="question-title">
+
+                    Do you need meals?
+
+                </label>
+
+
+                <div class="option-group">
+
+
+                    <input type="radio"
+                    id="mealYes"
+                    name="meals"
+                    value="Yes">
+
+
+                    <label for="mealYes">
+
+                        Yes
+
+                    </label>
+
+
+
+                    <input type="radio"
+                    id="mealNo"
+                    name="meals"
+                    value="No"
+                    checked>
+
+
+                    <label for="mealNo">
+
+                        No
+
+                    </label>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <div class="conditional"
+            id="mealDetails">
+
+
+                <div class="question">
+
+
+                    <label class="question-title">
+
+                        Food Preference
+
+                    </label>
+
+
+                    <div class="option-group">
+
+
+                        <input type="radio"
+                        id="veg"
+                        name="food"
+                        value="Vegetarian">
+
+
+                        <label for="veg">
+
+                            Vegetarian
+
+                        </label>
+
+
+
+                        <input type="radio"
+                        id="nonveg"
+                        name="food"
+                        value="Non Vegetarian">
+
+
+                        <label for="nonveg">
+
+                            Non-Vegetarian
+
+                        </label>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="question">
+
+
+                    <label class="question-title">
+
+                        Meal Plan
+
+                    </label>
+
+
+                    <div class="option-group">
+
+
+                        <input type="radio"
+                        id="breakfast"
+                        name="mealPlan"
+                        value="Breakfast Only">
+
+
+                        <label for="breakfast">
+
+                            Breakfast Only
+
+                        </label>
+
+
+
+                        <input type="radio"
+                        id="breakfastDinner"
+                        name="mealPlan"
+                        value="Breakfast and Dinner">
+
+
+                        <label for="breakfastDinner">
+
+                            Breakfast + Dinner
+
+                        </label>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =====================
+             VEHICLE
+        ====================== -->
+
+        <section class="form-section">
+
+
+            <div class="section-number">
+
+                04 / TRANSPORT
+
+            </div>
+
+
+            <h2>Do you need a vehicle?</h2>
+
+
+            <div class="option-group">
+
+
+                <input type="radio"
+                id="vehicleYes"
+                name="vehicle"
+                value="Yes">
+
+
+                <label for="vehicleYes">
+
+                    Yes, I need transportation
+
+                </label>
+
+
+
+                <input type="radio"
+                id="vehicleNo"
+                name="vehicle"
+                value="No"
+                checked>
+
+
+                <label for="vehicleNo">
+
+                    No, not required
+
+                </label>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =====================
+             TRAVEL PLAN
+        ====================== -->
+
+        <section class="form-section">
+
+
+            <div class="section-number">
+
+                05 / YOUR PLAN
+
+            </div>
+
+
+            <h2>Do you have a plan already?</h2>
+
+
+            <div class="option-group">
+
+
+                <input type="radio"
+                id="planYes"
+                name="plan"
+                value="Yes">
+
+
+                <label for="planYes">
+
+                    Yes
+
+                </label>
+
+
+
+                <input type="radio"
+                id="planNo"
+                name="plan"
+                value="No"
+                checked>
+
+
+                <label for="planNo">
+
+                    No
+
+                </label>
+
+
+            </div>
+
+
+
+            <div class="conditional"
+            id="planDetails">
+
+
+                <label class="question-title">
+
+                    Tell us about your travel plan
+
+                </label>
+
+
+                <textarea
+                name="planDetails"
+                placeholder="Example: We want to travel for 5 days in December and explore Srinagar, Gulmarg and Pahalgam.">
+
+                </textarea>
+        </div>
+        </section>
+             <section class="form-section">
+
+
+            <div class="section-number">
+
+                06 / YOUR DURATION
+
+            </div>
+
+
+            <h2>For how many days are you planning to travel?</h2>
+
+
+            <div class="option-group">
+
+        <input type="radio"
+               id="durationDecided"
+               name="duration"
+               value="Decided">
+
+        <label for="durationDecided">
+            I Know My Duration
+        </label>
+
+
+        <input type="radio"
+               id="durationNotDecided"
+               name="duration"
+               value="Not Decided">
+
+        <label for="durationNotDecided">
+            Not Decided
+        </label>
+        </div>
+
+    <!-- DURATION DETAILS -->
+
+    <div class="conditional" id="durationDetails">
+
+        <div class="grid-2">
+
+            <div>
+
+                <label class="question-title">
+                    Number of Nights
+                </label>
+
+                <input
+                    type="number"
+                    name="nights"
+                    min="0"
+                    placeholder="Enter number of nights">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+        </section>
+
+
+        <section class="form-section">
+
+
+            <div class="section-number">
+
+                07 / BUDGET
+
+            </div>
+
+
+            <h2>What is your budget per person?</h2>
+
+
+            <div class="input-group">
+
+    <input
+        type="number"
+        name="budget"
+        min="1000"
+        placeholder="Enter your budget per person (₹)"
+        required>
+
+</div>
+
+        </section>
+
+
+        <!-- =====================
+             CONTACT
+        ====================== -->
+
+        <section class="form-section">
+
+
+            <div class="section-number">
+
+                08 / CONTACT DETAILS
+
+            </div>
+
+
+            <h2>How can we reach you?</h2>
+
+
+            <div class="grid-2">
+
+
+                <div class="question">
+
+                    <label class="question-title">
+
+                        Full Name
+
+                    </label>
+
+
+                    <input
+                    type="text"
+                    name="name"
+                    placeholder="Your full name"
+                    required>
+
+                </div>
+
+
+
+                <div class="question">
+
+                    <label class="question-title">
+
+                        Phone Number
+
+                    </label>
+
+
+                    <input
+                    type="tel"
+                    name="phone"
+                    placeholder="Your phone number"
+                    required>
+
+                </div>
+
+
+
+                <div class="question full">
+
+                    <label class="question-title">
+
+                        Email Address (Optional)
+
+                    </label>
+
+
+                    <input
+                    type="email"
+                    name="email"
+                    placeholder="Your email address">
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =====================
+             SUBMIT
+        ====================== -->
+
+        <section class="submit-section">
+
+
+            <button
+            type="submit"
+            class="submit-btn">
+
+                Generate Quotation →
+
+            </button>
+
+
+            <div
+            class="success-message"
+            id="successMessage">
+
+                <h3>Thank You!</h3>
+
+                <br>
+
+                Your customised trip request has been received.
+
+                <br><br>
+
+                Our travel expert will contact you shortly.
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+</form>
+
+
+
+<footer>
+
+    © 2026 Krish & Payel Luxury Travel Experiences
+
+</footer>
+
+
+
+<!-- =========================
+     JAVASCRIPT
+========================= -->
+
+<script>
+
+/* =====================================
+   DESTINATION
+===================================== */
+
+const cards = document.querySelectorAll(".destination-card");
+
+cards.forEach(card => {
+
+    card.addEventListener("click", function () {
+
+        cards.forEach(item => {
+            item.classList.remove("selected");
+        });
+
+        this.classList.add("selected");
+
+        document
+            .getElementById("destination")
+            .value = this.dataset.destination;
+
+    });
+
+});
+
+
+/* =====================================
+   CAROUSEL
+===================================== */
+
+function scrollCarousel(amount) {
+
+    const carousel =
+        document.getElementById("destinationCarousel");
+
+    if (!carousel) return;
+
+    carousel.scrollBy({
+        left: amount,
+        behavior: "smooth"
+    });
+
+}
+
+
+/* =====================================
+   SENIOR CITIZENS
+===================================== */
+
+const seniorYes =
+    document.getElementById("seniorYes");
+
+const seniorNo =
+    document.getElementById("seniorNo");
+
+const seniorDetails =
+    document.getElementById("seniorDetails");
+
+
+if (seniorYes && seniorDetails) {
+
+    seniorYes.addEventListener(
+        "change",
+        function () {
+
+            seniorDetails.style.display =
+                "block";
+
+        }
+    );
+
+}
+
+
+if (seniorNo && seniorDetails) {
+
+    seniorNo.addEventListener(
+        "change",
+        function () {
+
+            seniorDetails.style.display =
+                "none";
+
+        }
+    );
+
+}
+
+
+/* =====================================
+   CHILDREN
+===================================== */
+
+const kidsYes =
+    document.getElementById("kidsYes");
+
+const kidsNo =
+    document.getElementById("kidsNo");
+
+const kidsDetails =
+    document.getElementById("kidsDetails");
+
+
+if (kidsYes && kidsDetails) {
+
+    kidsYes.addEventListener(
+        "change",
+        function () {
+
+            kidsDetails.style.display =
+                "block";
+
+        }
+    );
+
+}
+
+
+if (kidsNo && kidsDetails) {
+
+    kidsNo.addEventListener(
+        "change",
+        function () {
+
+            kidsDetails.style.display =
+                "none";
+
+        }
+    );
+
+}
+
+
+/* =====================================
+   MEALS
+===================================== */
+
+const mealYes =
+    document.getElementById("mealYes");
+
+const mealNo =
+    document.getElementById("mealNo");
+
+const mealDetails =
+    document.getElementById("mealDetails");
+
+
+if (mealYes && mealDetails) {
+
+    mealYes.addEventListener(
+        "change",
+        function () {
+
+            mealDetails.style.display =
+                "block";
+
+        }
+    );
+
+}
+
+
+if (mealNo && mealDetails) {
+
+    mealNo.addEventListener(
+        "change",
+        function () {
+
+            mealDetails.style.display =
+                "none";
+
+        }
+    );
+
+}
+
+
+/* =====================================
+   TRAVEL PLAN
+===================================== */
+
+const planYes =
+    document.getElementById("planYes");
+
+const planNo =
+    document.getElementById("planNo");
+
+const planDetails =
+    document.getElementById("planDetails");
+
+
+if (planYes && planDetails) {
+
+    planYes.addEventListener(
+        "change",
+        function () {
+
+            planDetails.style.display =
+                "block";
+
+        }
+    );
+
+}
+
+
+if (planNo && planDetails) {
+
+    planNo.addEventListener(
+        "change",
+        function () {
+
+            planDetails.style.display =
+                "none";
+
+        }
+    );
+
+}
+
+
+/* =====================================
+   TRIP DURATION
+===================================== */
+
+const durationDecided =
+    document.getElementById("durationDecided");
+
+const durationNotDecided =
+    document.getElementById("durationNotDecided");
+
+const durationDetails =
+    document.getElementById("durationDetails");
+
+
+if (durationDecided && durationDetails) {
+
+    durationDecided.addEventListener(
+        "change",
+        function () {
+
+            durationDetails.style.display =
+                "block";
+
+        }
+    );
+
+}
+
+
+if (durationNotDecided && durationDetails) {
+
+    durationNotDecided.addEventListener(
+        "change",
+        function () {
+
+            durationDetails.style.display =
+                "none";
+
+        }
+    );
+
+}
+
+
+/* =====================================
+   HOSTINGER SAME-ORIGIN API ENDPOINT
+   The Hostinger PHP proxy calls Google Apps Script.
+   This avoids browser CORS problems.
+===================================== */
+
+const quotationAPI = "/api/quotation.php";
+
+
+/* =====================================
+   FORM SUBMISSION
+===================================== */
+
+const tripForm =
+    document.getElementById("tripForm");
+
+
+if (tripForm) {
+
+    tripForm.addEventListener(
+        "submit",
+        async function (event) {
+
+
+            event.preventDefault();
+
+
+            const form =
+                event.target;
+
+
+            /* =====================================
+               CREATE DATA
+            ===================================== */
+
+            const data = {
+
+
+                /* DESTINATION */
+
+                destination:
+
+                    document
+                        .getElementById("destination")
+                        ?.value
+                        ?.trim() || "",
+
+
+                /* TRAVELLERS */
+
+                persons:
+
+                    form
+                        .querySelector(
+                            '[name="persons"]'
+                        )
+                        ?.value
+                        ?.trim() || "",
+
+
+                /* BUDGET */
+
+                budget:
+
+                    form
+                        .querySelector(
+                            '[name="budget"]'
+                        )
+                        ?.value
+                        ?.trim() || "",
+
+
+                /* SENIOR CITIZENS */
+
+                senior:
+
+                    form
+                        .querySelector(
+                            '[name="senior"]:checked'
+                        )
+                        ?.value || "",
+
+
+                seniorCount:
+
+                    form
+                        .querySelector(
+                            '[name="seniorCount"]'
+                        )
+                        ?.value
+                        ?.trim() || "",
+
+
+                /* CHILDREN */
+
+                kids:
+
+                    form
+                        .querySelector(
+                            '[name="kids"]:checked'
+                        )
+                        ?.value || "",
+
+
+                childrenCount:
+
+                    form
+                        .querySelector(
+                            '[name="childrenCount"]'
+                        )
+                        ?.value
+                        ?.trim() || "",
+
+
+                /* MEALS */
+
+                meals:
+
+                    form
+                        .querySelector(
+                            '[name="meals"]:checked'
+                        )
+                        ?.value || "",
+
+
+                food:
+
+                    form
+                        .querySelector(
+                            '[name="food"]:checked'
+                        )
+                        ?.value || "",
+
+
+                mealPlan:
+
+                    form
+                        .querySelector(
+                            '[name="mealPlan"]:checked'
+                        )
+                        ?.value || "",
+
+
+                /* VEHICLE */
+
+                vehicle:
+
+                    form
+                        .querySelector(
+                            '[name="vehicle"]:checked'
+                        )
+                        ?.value || "",
+
+
+                /* DURATION */
+
+                duration:
+
+                    form
+                        .querySelector(
+                            '[name="duration"]:checked'
+                        )
+                        ?.value || "",
+
+
+                nights:
+
+                    form
+                        .querySelector(
+                            '[name="nights"]'
+                        )
+                        ?.value
+                        ?.trim() || "",
+
+
+                /* TRAVEL PLAN */
+
+                plan:
+
+                    form
+                        .querySelector(
+                            '[name="plan"]:checked'
+                        )
+                        ?.value || "",
+
+
+                planDetails:
+
+                    form
+                        .querySelector(
+                            '[name="planDetails"]'
+                        )
+                        ?.value
+                        ?.trim() || "",
+
+
+                /* CONTACT DETAILS */
+
+                name:
+
+                    form
+                        .querySelector(
+                            '[name="name"]'
+                        )
+                        ?.value
+                        ?.trim() || "",
+
+
+                phone:
+
+                    form
+                        .querySelector(
+                            '[name="phone"]'
+                        )
+                        ?.value
+                        ?.trim() || "",
+
+
+                email:
+
+                    form
+                        .querySelector(
+                            '[name="email"]'
+                        )
+                        ?.value
+                        ?.trim() || ""
+
+            };
+
+
+            /* =====================================
+               VALIDATION
+            ===================================== */
+
+
+            /* DESTINATION */
+
+            if (!data.destination) {
+
+                alert(
+                    "Please select your destination."
+                );
+
+                return;
+
+            }
+
+
+            /* TRAVELLERS */
+
+            if (!data.persons) {
+
+                alert(
+                    "Please enter the number of travellers."
+                );
+
+                return;
+
+            }
+
+
+            if (Number(data.persons) <= 0) {
+
+                alert(
+                    "Please enter a valid number of travellers."
+                );
+
+                return;
+
+            }
+
+
+            /* BUDGET */
+
+            if (!data.budget) {
+
+                alert(
+                    "Please enter your budget per person."
+                );
+
+                return;
+
+            }
+
+
+            if (Number(data.budget) <= 0) {
+
+                alert(
+                    "Please enter a valid budget."
+                );
+
+                return;
+
+            }
+
+
+            /* SENIOR CITIZENS */
+
+            if (
+                data.senior === "Yes" &&
+                !data.seniorCount
+            ) {
+
+                alert(
+                    "Please enter the number of senior citizens."
+                );
+
+                return;
+
+            }
+
+
+            /* CHILDREN */
+
+            if (
+                data.kids === "Yes" &&
+                !data.childrenCount
+            ) {
+
+                alert(
+                    "Please enter the number of children."
+                );
+
+                return;
+
+            }
+
+
+            /* MEALS */
+
+            if (data.meals === "Yes") {
+
+
+                if (!data.food) {
+
+                    alert(
+                        "Please select your food preference."
+                    );
+
+                    return;
+
+                }
+
+
+                if (!data.mealPlan) {
+
+                    alert(
+                        "Please select your meal plan."
+                    );
+
+                    return;
+
+                }
+
+            }
+
+
+            /* DURATION */
+
+            if (!data.duration) {
+
+                alert(
+                    "Please select your trip duration preference."
+                );
+
+                return;
+
+            }
+
+
+            if (
+                data.duration === "Decided" &&
+                !data.nights
+            ) {
+
+                alert(
+                    "Please enter the number of nights."
+                );
+
+                return;
+
+            }
+
+
+            if (
+                data.duration === "Decided" &&
+                Number(data.nights) < 1
+            ) {
+
+                alert(
+                    "Number of nights must be at least 1."
+                );
+
+                return;
+
+            }
+
+
+            /* TRAVEL PLAN */
+
+            if (
+                data.plan === "Yes" &&
+                !data.planDetails
+            ) {
+
+                alert(
+                    "Please tell us about your travel plan."
+                );
+
+                return;
+
+            }
+
+
+            /* =====================================
+               SUBMIT BUTTON
+            ===================================== */
+
+            const submitButton =
+                form.querySelector(".submit-btn");
+
+
+            const originalButtonText =
+                submitButton
+                    ? submitButton.innerHTML
+                    : "";
+
+
+            if (submitButton) {
+
+                submitButton.disabled = true;
+
+                submitButton.innerHTML =
+                    "Generating Quotation...";
+
+            }
+
+
+            try {
+
+
+                /* =====================================
+                   SEND DATA TO GOOGLE APPS SCRIPT
+                ===================================== */
+
+                const response =
+                    await fetch(
+                        quotationAPI,
+                        {
+
+                            method: "POST",
+
+                            headers: {
+
+                                "Content-Type":
+                                    "application/json"
+
+                            },
+
+                            credentials: "same-origin",
+
+                            body:
+                                JSON.stringify(data)
+
+                        }
+                    );
+
+
+                /* =====================================
+                   GET RESPONSE TEXT FIRST
+                ===================================== */
+
+                const responseText =
+                    await response.text();
+
+                if (!response.ok) {
+                    console.error(
+                        "API HTTP Error:",
+                        response.status,
+                        responseText
+                    );
+
+                    throw new Error(
+                        "The quotation service returned an HTTP " +
+                        response.status +
+                        " error."
+                    );
+                }
+
+
+                let result;
+
+
+                try {
+
+                    result =
+                        JSON.parse(responseText);
+
+                }
+
+                catch (jsonError) {
+
+                    console.error(
+                        "Invalid Server Response:",
+                        responseText
+                    );
+
+                    throw new Error(
+                        "Invalid response received from the server."
+                    );
+
+                }
+
+
+                /* =====================================
+                   CHECK ERROR
+                ===================================== */
+
+                if (
+                    result.status !== "success"
+                ) {
+
+                    throw new Error(
+
+                        result.message ||
+
+                        "Unable to generate quotation."
+
+                    );
+
+                }
+
+
+                /* =====================================
+                   SHOW QUOTATION
+                ===================================== */
+
+                showQuotation(result);
+
+
+                /* =====================================
+                   SUCCESS MESSAGE
+                ===================================== */
+
+                const successMessage =
+                    document.getElementById(
+                        "successMessage"
+                    );
+
+
+                if (successMessage) {
+
+                    successMessage.style.display =
+                        "block";
+
+                }
+
+
+                /* =====================================
+                   RESET FORM
+                ===================================== */
+
+                form.reset();
+
+
+                /* =====================================
+                   HIDE CONDITIONAL FIELDS
+                ===================================== */
+
+                if (seniorDetails) {
+
+                    seniorDetails.style.display =
+                        "none";
+
+                }
+
+
+                if (kidsDetails) {
+
+                    kidsDetails.style.display =
+                        "none";
+
+                }
+
+
+                if (mealDetails) {
+
+                    mealDetails.style.display =
+                        "none";
+
+                }
+
+
+                if (planDetails) {
+
+                    planDetails.style.display =
+                        "none";
+
+                }
+
+
+                if (durationDetails) {
+
+                    durationDetails.style.display =
+                        "none";
+
+                }
+
+
+                /* =====================================
+                   REMOVE DESTINATION SELECTION
+                ===================================== */
+
+                document
+                    .querySelectorAll(
+                        ".destination-card"
+                    )
+                    .forEach(card => {
+
+                        card.classList.remove(
+                            "selected"
+                        );
+
+                    });
+
+
+                const destinationInput =
+                    document.getElementById(
+                        "destination"
+                    );
+
+
+                if (destinationInput) {
+
+                    destinationInput.value = "";
+
+                }
+
+
+            }
+
+
+            catch (error) {
+
+
+                console.error(
+                    "Quotation Error:",
+                    error
+                );
+
+
+                alert(
+
+                    "Something went wrong while generating your quotation.\n\n" +
+
+                    error.message
+
+                );
+
+
+            }
+
+
+            finally {
+
+
+                if (submitButton) {
+
+                    submitButton.disabled =
+                        false;
+
+
+                    submitButton.innerHTML =
+                        originalButtonText;
+
+                }
+
+
+            }
+
+
+        }
+    );
+
+}
+
+
+/* =====================================
+   ESCAPE HTML
+===================================== */
+
+function escapeHTML(text) {
+
+
+    const div =
+        document.createElement("div");
+
+
+    div.textContent =
+        text || "";
+
+
+    return div.innerHTML;
+
+
+}
+
+
+/* =====================================
+   FORMAT TEXT
+===================================== */
+
+function formatText(text) {
+
+
+    if (!text) {
+
+        return
+            "<p>No information available.</p>";
+
+    }
+
+
+    return escapeHTML(text)
+
+        .replace(
+            /\n/g,
+            "<br>"
+        );
+
+
+}
+
+
+/* =====================================
+   FORMAT CURRENCY
+===================================== */
+
+function formatCurrency(amount) {
+
+
+    const number =
+        Number(amount) || 0;
+
+
+    return (
+        "₹" +
+
+        number.toLocaleString(
+            "en-IN"
+        )
+    );
+
+
+}
+
+
+/* =====================================
+   SHOW GENERATED QUOTATION
+===================================== */
+
+function showQuotation(result) {
+
+
+    let quotationBox =
+        document.getElementById(
+            "quotationResult"
+        );
+
+
+    /* =====================================
+       CREATE QUOTATION BOX
+    ===================================== */
+
+    if (!quotationBox) {
+
+
+        quotationBox =
+            document.createElement("div");
+
+
+        quotationBox.id =
+            "quotationResult";
+
+
+        quotationBox.className =
+            "quotation-result";
+
+
+        document
+            .getElementById("tripForm")
+            .insertAdjacentElement(
+
+                "afterend",
+
+                quotationBox
+
+            );
+
+
+    }
+
+
+    /* =====================================
+       GET DATA
+    ===================================== */
+
+    const quotationId =
+        result.quotationId || "";
+
+
+    const nights =
+        Number(result.nights) || 0;
+
+
+    const days =
+        nights + 1;
+
+
+    const totalCost =
+        Number(result.totalCost) || 0;
+
+
+    const costPerPerson =
+        Number(result.costPerPerson) || 0;
+
+
+    const quotation =
+        result.quotation || "";
+
+
+    /* ITINERARY - MULTIPLE FALLBACKS */
+
+    const itinerary =
+
+        result.itinerary ||
+
+        result.dayWiseItinerary ||
+
+        result.travelItinerary ||
+
+        "";
+
+
+    /* =====================================
+       DISPLAY QUOTATION
+    ===================================== */
+
+    quotationBox.innerHTML = `
+
+
+        <div class="quotation-header">
+
+            <h2>
+                Your Customised Trip Quotation
+            </h2>
+
+            <p>
+
+                Quotation ID:
+
+                <strong>
+                    ${escapeHTML(quotationId)}
+                </strong>
+
+            </p>
+
+        </div>
+
+
+        <div class="quotation-summary">
+
+
+            <div>
+
+                <span>
+                    Duration
+                </span>
+
+                <strong>
+
+                    ${nights} Nights /
+
+                    ${days} Days
+
+                </strong>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    Approx. Total Cost
+                </span>
+
+                <strong>
+                    ${formatCurrency(totalCost)}
+                </strong>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    Approx. Cost Per Person
+                </span>
+
+                <strong>
+                    ${formatCurrency(costPerPerson)}
+                </strong>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- =====================
+             DAY-WISE ITINERARY
+        ====================== -->
+
+        <div class="quotation-itinerary">
+
+            <h2>
+                Your Day-wise Itinerary
+            </h2>
+
+            <div class="itinerary-content">
+
+                ${itinerary
+
+                    ? formatText(itinerary)
+
+                    : "<p>Your itinerary could not be displayed. Please contact us.</p>"
+
+                }
+
+            </div>
+
+        </div>
+
+
+        <!-- =====================
+             COMPLETE QUOTATION
+        ====================== -->
+
+        <div class="quotation-details">
+
+            <h2>
+                Complete Quotation
+            </h2>
+
+            <div class="quotation-content">
+
+                ${formatText(quotation)}
+
+            </div>
+
+        </div>
+
+
+        <!-- =====================
+             CONTACT
+        ====================== -->
+
+        <div class="quotation-contact">
+
+            <h3>
+                Need Help?
+            </h3>
+
+            <p>
+                For Payment Procedure
+                and Enquiries
+            </p>
+
+            <strong>
+                📞 8100420037
+            </strong>
+
+        </div>
+
+
+    `;
+
+
+    quotationBox.style.display =
+        "block";
+
+
+    /* =====================================
+       SCROLL TO QUOTATION
+    ===================================== */
+
+    setTimeout(() => {
+
+
+        quotationBox.scrollIntoView({
+
+            behavior: "smooth",
+
+            block: "start"
+
+        });
+
+
+    }, 300);
+
+
+}
+</script>
+
+    </body>
+
+    </html>
