@@ -1,0 +1,7 @@
+RewriteEngine On
+
+# Make /plan-your-trip load customised.html
+RewriteRule ^customised/?$ customised.html [L]
+
+# Keep the homepage working
+RewriteRule ^$ index.html [L]
