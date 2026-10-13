@@ -88,8 +88,6 @@ if ($jsonData === false) {
     exit;
 }
 
-$contentLength = strlen($jsonData);
-
 
 /*
 |--------------------------------------------------------------------------
@@ -107,21 +105,24 @@ curl_setopt_array($ch, [
 
     CURLOPT_HTTPHEADER => [
         "Content-Type: application/json",
-        "Accept: application/json",
-        "Content-Length: " . $contentLength
+        "Accept: application/json"
     ],
 
     CURLOPT_RETURNTRANSFER => true,
 
     /*
-     * Google Apps Script returns 302.
-     * Follow it while preserving POST.
+     * IMPORTANT:
+     * Google Apps Script returns a 302 redirect.
+     * cURL must follow that redirect and change the
+     * redirected request to GET.
      */
     CURLOPT_FOLLOWLOCATION => true,
 
     CURLOPT_MAXREDIRS => 10,
 
-    CURLOPT_POSTREDIR => 7,
+    /*
+     * DO NOT set CURLOPT_POSTREDIR here.
+     */
 
     CURLOPT_CONNECTTIMEOUT => 30,
 
